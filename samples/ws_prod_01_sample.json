@@ -1,0 +1,82 @@
+{
+  "server_id": "ws-prod-01",
+  "hostname": "WS-PROD-01",
+  "ip": "10.0.1.10",
+  "role": "Production Application Server",
+  "timestamp": "2026-09-07T20:00:00",
+  "online": true,
+  "cpu": {
+    "usage_percent": 51.8,
+    "core_count": 8,
+    "load_1m": 2.69,
+    "load_5m": 4.53,
+    "load_15m": 4.73
+  },
+  "memory": {
+    "total_gb": 32,
+    "used_gb": 44.8,
+    "usage_percent": 75.7,
+    "available_gb": 7.5
+  },
+  "disks": [
+    {
+      "letter": "C:",
+      "label": "System",
+      "total_gb": 200,
+      "used_gb": 108.4,
+      "free_gb": 79.2,
+      "usage_percent": 57.1
+    },
+    {
+      "letter": "D:",
+      "label": "Data",
+      "total_gb": 500,
+      "used_gb": 289.0,
+      "free_gb": 215.5,
+      "usage_percent": 61.2
+    }
+  ],
+  "services": [
+    {
+      "name": "W3SVC",
+      "display_name": "World Wide Web Publishing",
+      "status": "Running",
+      "start_type": "Automatic"
+    },
+    {
+      "name": "MSSQLSERVER",
+      "display_name": "SQL Server (MSSQLSERVER)",
+      "status": "Running",
+      "start_type": "Automatic"
+    },
+    {
+      "name": "W32Time",
+      "display_name": "Windows Time",
+      "status": "Running",
+      "start_type": "Automatic"
+    }
+  ],
+  "processes": [
+    {
+      "pid": 4832,
+      "name": "sqlservr.exe",
+      "cpu_percent": 30.0,
+      "memory_mb": 1929.0
+    },
+    {
+      "pid": 1256,
+      "name": "w3wp.exe",
+      "cpu_percent": 9.6,
+      "memory_mb": 308.0
+    }
+  ],
+  "network": [
+    {
+      "interface": "Ethernet0",
+      "bytes_sent_per_sec": 46444309,
+      "bytes_recv_per_sec": 75918962,
+      "packets_sent_per_sec": 34245,
+      "packets_recv_per_sec": 69555
+    }
+  ]
+}

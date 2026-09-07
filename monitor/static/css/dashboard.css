@@ -1,0 +1,53 @@
+/* Dashboard dark theme overrides */
+:root {
+    --bs-body-bg: #0d1117;
+    --bs-body-color: #c9d1d9;
+    --card-border: #30363d;
+}
+
+body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.card {
+    transition: border-color 0.2s;
+}
+.card:hover {
+    border-color: #58a6ff !important;
+}
+
+.card-header {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.table-dark {
+    --bs-table-bg: transparent;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.badge.bg-warning {
+    font-weight: 600;
+}
+
+/* Chart canvas sizing */
+canvas {
+    max-height: 200px;
+}
+
+/* Status indicators */
+.status-running { color: #3fb950; }
+.status-stopped { color: #f85149; }
+.status-paused  { color: #d29922; }
+
+/* Alert row coloring */
+.alert-critical { border-left: 3px solid #f85149; }
+.alert-warning  { border-left: 3px solid #d29922; }
+
+/* Updated: 2026-09-07 */
